@@ -1,75 +1,89 @@
-* {
-  box-sizing: border-box;
+*{box-sizing: border-box;}
+
+body{
+  font-family: Arial, Helvetica, sans-serif
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.headerContainer {
+.headerContainer{
   max-width: 900px;
-  margin: 55px auto;
+  margin: 40px auto;
 }
 
-.container {
-  display: flex;
+.container{
+  display:flex;
   max-width: 900px;
   margin: auto;
-
 }
 
-.container .leftSide {
-  flex: 5;
-  margin-left: 100px;
-
+.container .leftSide{
+  flex:1;
 }
 
-.container .leftSide h1 {
-  margin: 2;
-  font-size: 27px;
-  color: rgb(210, 45, 225);
+.container .leftSide h1{
+  margin: 0;
+  font-size: 40px;
+  color: #505458;
 }
 
-.container .leftSide p {
-  font-size: 17px;
-  margin-bottom: 10px;
-  color: rgb(0, 0, 0);
-
+.container .leftSide p{
+  font-size: 16px;
+  margin-bottom: 40px;
+  color:#000000;
 }
 
-.container .leftSide input {
-  width:100%;
+.container .leftSide input{
+  width: 100%;
   border: 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   padding: 10px 2px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   font-size: 14px;
   outline: 0;
-
 }
 
-.container .leftSide button {
-  background-color: rgb(210, 45, 225);
-  color: rgb(2, 2, 2);
-  border: 0;
+.container .leftSide button{
+  background-color: #000000;
+  color:#ffffff;
   font-size: 15px;
+  border:0;
+  border-radius: 10px;
   width: 100%;
-  border-radius: 1px;
-  padding: 13px;
-  font-weight: bold;
+  padding: 15px 0;
+  margin-top: 40px;
   cursor: pointer;
-  transition: all ease .2s;
-
+  transition: all ease .5s;
 }
+
 .container .leftSide button:hover{
-  opacity: .3;
+  opacity: .4;
 }
 
 
+.container .rightSide{
+   flex:1;
+   margin-left: 40px;
+   display: flex;
+}
 
-
-
-.container .rightSide {
-  flex: 1;
-  margin-left: 40px;
+.container .rightSide .grid{
+    flex:1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.container .rightSide .rightBig{
+flex: 1;
+display: flex;
+}
+.container .rightSide .rightArrow{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: -35px;
+  margin-top: 145px;
 }
